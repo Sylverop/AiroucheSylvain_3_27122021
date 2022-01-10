@@ -1,0 +1,14 @@
+{
+  "sass": "p3_airouche_sylvain",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "sass": "sass --watch ./sass/main.scss:./public/css/style.css"
+  },
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "dependencies": {
+    "npm": "^8.3.0"
+  }
+}
