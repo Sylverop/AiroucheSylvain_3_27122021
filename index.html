@@ -10,55 +10,145 @@
 
  
   <body> 
-    <div class="container">   
+    <div class="Loading__container">   
       <header>   
         <div class="logo">
           <i class="fas fa-solid fa-handshake-angle" aria-hidden="true"></i>
-        <img src="images/logo/ohmyfood2.png" alt="logo"></img>  
+        <img src="images/logo/ohmyfood2.png" alt="logo"id="logo"></img>  
         </div>
       </header>  
       <nav>
-        <div class=localisation>
-           <i class="fas fa-map-marker-alt" aria-hidden="true"></i>
-           <input type="text" placeholder="Paris, Belleville">
+        <div class="form__localisation">
+             <i class="fas fa-map-marker-alt spread" aria-hidden="true"></i>
+             <input type="text" placeholder="Paris, Belleville">
+        </div>
           <h1 class="title__homepage"> Réservez le menu qui </br>
-             vous convient
+               vous convient
           </h1>
-          <h2 class="title__presentation">Décrouvez des restaurants d'exception </br>
+          <h2 class="title__homepage">Décrouvez des restaurants d'exception </br>
            sélectionnés par nos soins
-          <h2>
+          </h2>
           <div class="btn__reservation">
                <a href="#restaurants">Explorer nos restaurants</a>
           </div>
-          <div class="container_fonctionnality">
+          <div class="container__fonctionnality">
                   <h2 class="title__homepage2">Fonctionnement</h2>
-              <div class="container_fonctionnality_card">
-                  <div class="numero_effetrond"> 1
-                      <i class="fas fa-mobile-alt" aria-hidden="true"></i>
-                    <div class="choix">
-                      Choisissez un restaurant
-                   </div>
-                 </div>
-              </div> 
-              <div class="container_fonctionnality_card">
-                  <div class="numero_effetrond"> 2
-                      <i class="fas fa-list-ul" aria-hidden="true"></i>
-                    <div class="choix">
-                      Composez votre menu
-                    </div>
-                 </div>
-              </div> 
-              <div class="container_fonctionnality_card">
-                  <div class="numero_effetrond"> 3
-                      <i class="fas fa-store" aria-hidden="true"></i>
-                    <div class="choix">
-                      Dégustez au restaurant
-                    </div>
+              <div class="container__fonctionnality__card">
+                  <div class="number__effetrond"> 1 
                   </div>
+                      <i class="fas fa-mobile-alt colorgrey" aria-hidden="true"></i>
+                    <div class="choice">
+                      Choisissez un restaurant                  
+                    </div>
               </div> 
-            </div>
-         </div>
+              <div class="container__fonctionnality__card">
+                  <div class="number_effetrond"> 2
+                  </div>    
+                      <i class="fas fa-list-ul colorgrey" aria-hidden="true"></i>
+                    <div class="choice">
+                      Composez votre menu                    
+                    </div>
+              </div> 
+              <div class="container__fonctionnality__card">
+                  <div class="number__effetrond"> 3
+                   </div> 
+                      <i class="fas fa-store colorgrey" aria-hidden="true"></i>
+                    <div class="choice">
+                      Dégustez au restaurant
+                    </div>                 
+              </div> 
+          </div>         
       </nav>
+      <section id="restaurant">
+         <h2 class="title__homepage2">Restaurants</h2>
+          <div class="card__present">
+              <div class="card__present__action">              
+                 <a href="menu_.html" target="_blank">
+                    <figure>
+                            <img src="images/restaurants/jay-wennington-N_Y88TWmGwA-unsplash.jpg" alt="">
+                        <figcaption class="legende">
+                              <h4>La palette du goût</h4>
+                              <p>Ménilmontant</p>
+                            <div class="heart__icon">
+                                <span>                              
+                                    <i class="far fa-heart" aria-hidden=true></i>                        
+                                </span>                    
+                            </div>  
+                        </figcaption>
+                    </figure> 
+                  </a>
+              </div>
+              <div class="card__present__action">              
+                <a href="menu_.html" target="_blank">
+                   <figure>
+                           <img src="images/restaurants/louis-hansel-shotsoflouis-qNBGVyOCY8Q-unsplash.jpg" alt="">
+                       <figcaption class="legende">
+                             <h4>La note enchantée</h4>
+                             <p>Charonne</p>
+                           <div class="heart__icon">
+                               <span>                              
+                                   <i class="far fa-heart" aria-hidden=true></i>                        
+                               </span>                    
+                           </div>  
+                       </figcaption>
+                   </figure> 
+                 </a>
+             </div>
+             <div class="card__present__action">              
+              <a href="menu_.html" target="_blank">
+                 <figure>
+                         <img src="images/restaurants/stil-u2Lp8tXIcjw-unsplash.jpg" alt="">
+                     <figcaption class="legende">
+                           <h4>À la française</h4>
+                           <p>Cité Rouge</p>
+                         <div class="heart__icon">
+                             <span>                              
+                                 <i class="far fa-heart" aria-hidden=true></i>                        
+                             </span>                    
+                         </div>  
+                     </figcaption>
+                 </figure> 
+               </a>
+           </div>
+           <div class="card__present__action">              
+            <a href="menu_.html" target="_blank">
+               <figure>
+                       <img src="images/restaurants/toa-heftiba-DQKerTsQwi0-unsplash.jpg" alt="">
+                       <div class="news"> Nouveau
+                       </div>
+                   <figcaption class="legende">
+                         <h4>Le délice des sens</h4>
+                         <p>Folie-Méricourt</p>
+                       <div class="heart__icon">
+                           <span>                              
+                               <i class="far fa-heart" aria-hidden=true></i>                        
+                           </span>                    
+                       </div>  
+                   </figcaption>
+               </figure> 
+             </a>
+         </div>
+          </div>
+       </section>
+       <footer>
+        <div class="entete">
+            <p class="entete">Ohmyfood<p> 
+        </div>
+        <ul>
+            <li>
+                <i class="fas fa-solid fa-utensils"></i>
+                Proposer un restaurant
+            </li>
+            <li>
+                <i class="fas fa-handshake"></i>
+                Devenir partenaire
+            </li>
+            <li>
+                Mentions légales
+            </li>
+            <li><a href="Sylvero15@gmail.com">Contact</a>
+        </ul>
+    </footer> 
     </div>
   </body>
 

@@ -1,11 +1,3 @@
-body {
-  box-sizing: border-box;
-  background-color: #f5f3f3;
-  font-family: "Roboto", sans-serif;
-  margin: 0 auto;
-  width: 100%;
-}
-
 .container {
   width: 100%;
 }
@@ -13,50 +5,179 @@ body {
 .logo {
   background-color: #fff;
   box-shadow: inset #c8c8d1 0px -3px 3px 0px;
-  padding: 2rem;
+  padding: 0.9em;
   text-align: center;
 }
 
-.form__group {
-  height: 200px;
+body {
+  box-sizing: border-box;
+  background-color: #F8F6F9;
+  font-family: "Roboto", sans-serif;
+  margin: 0 auto;
+  width: 100%;
+}
+
+h2 {
+  font-family: "Shrikhand", "cursive";
+  font-size: 20px;
+  font-weight: lighter;
+  padding-top: 30px;
+}
+
+.form__localisation {
+  background-color: #ECECEC;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
+input {
+  width: 135px;
+  padding-right: 20px;
+  border: none;
+  background-color: #ECECEC;
+  font-size: 19px;
+  height: 25px;
+  letter-spacing: -0.4px;
+}
+input::placeholder {
+  color: black;
+  font-weight: 600;
+}
+
+.spread {
+  font-size: 18px;
+  padding-right: 26px;
+}
+
+.title__homepage {
+  font-family: "roboto", "sans seriff";
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+h1.title__homepage {
+  font-size: 24px;
+  margin-top: 45px;
+  margin-bottom: 0;
+}
+
+h2.title__homepage {
+  font-size: 18px;
+  margin-top: 0;
+  padding-top: 20px;
+  font-weight: lighter;
+  padding-bottom: 0;
+  margin-bottom: 0;
+}
+
+.title__homepage2 {
+  font-family: "roboto", "sans seriff";
+  font-size: 24px;
+  margin-left: 25px;
+  font-weight: bolder;
+}
+
+.container__fonctionnality {
+  background-color: white;
+  padding-bottom: 50px;
+}
+
+.container__fonctionnality__card {
+  width: 78%;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 25px;
+  box-shadow: #dbdbdf 5px 6px 11px 4px;
+  background-color: #f8f7f7;
+  border-radius: 15px;
+  margin-bottom: 30px;
+}
+
+i.colorgrey {
+  color: #808080;
+}
+
+div.container__fonctionnality__card {
+  display: flex;
   align-items: center;
 }
-.form__group input {
-  border: 2px solid #fff;
-  border-radius: 100rem;
-  color: #15DEA5;
-  font-family: "Montserrat", sans-serif;
-  font-size: 2.5rem;
-  outline: none;
-  padding: 0.5rem 1.5rem;
-  width: 100%;
-  height: 100px;
+div.container__fonctionnality__card:nth-child(1) {
+  background-color: #9356DC;
+  width: 5px;
+  height: 5px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  padding: 10px;
+  border-radius: 50%;
+  transform: translatex(-36px);
 }
-.form__group input:focus {
-  border: 2px solid #15DEA5;
+div.container__fonctionnality__card:nth-child(3) {
+  font-weight: bolder;
 }
-.form__group input:not(:focus):invalid {
-  background: #b20a37;
-  border: 2px solid #b20a37;
-  color: #fff;
+div.container__fonctionnality__card:nth-child(2) {
+  font-size: 18px;
 }
 
-.btn {
-  background-color: rgba(1, 28, 55, 0);
-  text-align: center;
-  border: 4px solid #15DEA5;
-  width: 30%;
-  font-size: 3rem;
-  cursor: pointer;
-  padding: 1.85rem 3rem;
-  overflow: hidden;
-  border-radius: 10rem;
-  position: relative;
-  transition: transform 450ms, background-color 300ms 150ms;
+/*section restaurant*/
+#restaurant {
+  justify-content: space-between;
+  margin-bottom: 1.1rem;
 }
-.btn:hover {
-  transform: scale(1.13);
-  background-color: #011c37;
+
+.card__present {
+  border-radius: 15px;
+  margin: 0px 15px 0px 15px;
+}
+.card__present__action {
+  box-shadow: 0px 3px 10px rgba(102, 102, 102, 0.178);
+  width: 100%;
+  margin-bottom: 30px;
+  border-radius: 25px;
+  overflow: hidden;
+  color: white;
+}
+.card__present__action img {
+  height: 200px;
+  object-fit: cover;
+  width: 100%;
+  border-top-left-radius: 25px;
+  border-top-right-radius: 25px;
+  background-color: white;
+}
+
+.legende {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  font-size: 1rem;
+  box-shadow: 0px 3px 10px rgba(102, 102, 102, 0.178);
+  padding: 3px 0px 5px 10px;
+  position: relative;
+}
+
+.heart__icon {
+  align-self: flex-end;
+  position: absolute;
+  padding-right: 20px;
+}
+
+figure {
+  margin: 0;
+  background-color: white;
+}
+
+.logo {
+  background-color: #fff;
+  box-shadow: inset #c8c8d1 0px -3px 3px 0px;
+  padding: 0.9em;
+  text-align: center;
+  width: auto;
 }
 
 /*# sourceMappingURL=style.css.map */
