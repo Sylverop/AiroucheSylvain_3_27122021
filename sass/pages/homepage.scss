@@ -2,7 +2,49 @@ $bg-quaternary:  #ECECEC;
 $color-i-grey: #808080;
 $bg-primary: #9356DC;
 $bg-color-body: #F8F6F9;
-
+@mixin flexmid{
+  display: flex;
+  align-items: center;
+}
+@mixin positionner($x: 50%,$y: 50%) {
+    position: fixed;
+    left: $x;
+    top: $y;
+    transform: translate(-$x,-$y)
+}
+@keyframes loader{
+  0% {
+    background-color:$bg-primary;
+    opacity: 1;
+    z-index: 1;
+  }
+  50% {
+    opacity: 1;
+    background-color: white;
+    z-index: 1;
+  }
+  80% {
+    opacity: 1;
+    background-color: white;
+    z-index: 1;
+  }
+  100% {
+    transition: 0.8s;
+    opacity: 0;
+  }
+}
+@keyframes pulsation_bouton /* effet pulser au survole du bouton rechercher*/
+{
+	
+    from{
+        box-shadow:0 0 0 0px hsla(0,0%,100%,0),0 0 0 10px rgb(73, 177, 218)
+        
+        }
+    to{
+        
+        box-shadow:0 0 0  20px hsla(0,0%,100%,0),0 0 0 40px hsla(0,0%,100%,0)}
+        
+}
 body{
     box-sizing: border-box;
     background-color: $bg-color-body;
@@ -10,8 +52,27 @@ body{
     margin: 0 auto;
     width: 100%;
 }
+.Loading__container{
+  @include flexmid;
+  @include positionner;
+  justify-content: center;
+  background-color: $bg-primary;
+  border-radius: 50%;
+  width: 50%;
+  height: 25%;
+  animation-name: loader;
+  animation: pulsation_bouton 4s ease-in;
+  animation-duration: 5s;
+  animation-fill-mode: forwards;
+  animation-iteration-count: 1;  
+  object-fit: contain;
 
+  &--change{
+          transition: loader 500ms;
+          display: none;
+  }
 
+}
 h2 {
   font-family: 'Shrikhand', 'cursive';
   font-size: 20px;
@@ -19,13 +80,12 @@ h2 {
   padding-top: 30px;
 }
 .form{
-        &__localisation{       
-        background-color: $bg-quaternary;  
-        display: flex; 
-        align-items: center;
-        justify-content: center;  
-        padding-top: 10px;
-        padding-bottom: 10px;
+  &__localisation{   
+    @include flexmid; 
+    background-color: $bg-quaternary;         
+    justify-content: center;  
+    padding-top: 10px;
+    padding-bottom: 10px;
 }
 }
 input {
@@ -41,24 +101,22 @@ input {
           font-weight: 600;
         }
 }
-
 .spread{
         font-size: 18px;
         padding-right: 26px;
 }
-
 .title__homepage {
     font-family: 'roboto', 'sans seriff';
     text-align: center;
     margin-left: auto;
     margin-right: auto;
   }
-  h1.title__homepage {
+h1.title__homepage {
     font-size: 24px;
     margin-top: 45px;
     margin-bottom: 0;
   }
-  h2.title__homepage {
+h2.title__homepage {
     font-size: 18px;
     margin-top: 0;
     padding-top: 20px;
@@ -66,17 +124,17 @@ input {
     padding-bottom: 0;
     margin-bottom: 0;
   }
-  .title__homepage2 {
+.title__homepage2 {
     font-family: 'roboto', 'sans seriff';
     font-size: 24px;
     margin-left: 25px;
     font-weight: bolder;
   }
-  .container__fonctionnality {
+.container__fonctionnality {
     background-color: white;
     padding-bottom: 50px;
   }
-  .container__fonctionnality__card {
+.container__fonctionnality__card {
     width: 78%;
     margin-left: auto;
     margin-right: auto;
@@ -86,68 +144,63 @@ input {
     border-radius: 15px;
     margin-bottom: 30px;
   }
-  i.colorgrey{
+i.colorgrey{
     color: $color-i-grey;
   }
-  div.container__fonctionnality__card {   
-    display: flex;
-    align-items: center;
-    &:nth-child(1) {
-      background-color: $bg-primary;
-      width: 5px;
-      height: 5px;   
-      display: flex; 
-      justify-content: center;  
-      align-items: center;
-      color: white;
-      padding: 10px;
-      border-radius: 50%;
-      transform: translatex(-36px);
-    }
-    &:nth-child(3){   
-       font-weight: bolder; 
-    }
-    &:nth-child(2) {
-    font-size: 18px;  
-    }
-  }
+div.container__fonctionnality__card {   
+    @include flexmid;
+      &:nth-child(1) {
+        background-color: $bg-primary;
+        width: 5px;
+        height: 5px;   
+        display: flex; 
+        justify-content: center;  
+        align-items: center;
+        color: white;
+        padding: 10px;
+        border-radius: 50%;
+        transform: translatex(-36px);
+      }
+      &:nth-child(3){   
+        font-weight: bolder; 
+      }
+      &:nth-child(2) {
+      font-size: 18px;  
+      }
+}
   /*section restaurant*/
 
-#restaurant{
-   
+#restaurant{   
     justify-content: space-between;
     margin-bottom: 1.1rem;   
 }
 .card__present{
-  border-radius: 15px; 
-  margin: 0px 15px 0px 15px;
-   &__action{
-    box-shadow: 0px 3px 10px rgba(102, 102, 102, 0.178);
-    width: 100%;    
-    margin-bottom: 30px;   
-    border-radius: 25px;
-    overflow: hidden; 
-    color: white;
-    img{
-      height: 200px;
-      object-fit: cover;
-      width: 100%;
-      border-top-left-radius: 25px;
-      border-top-right-radius: 25px;
-      background-color: white;   
-    }  
-  }  
-   
-
+    border-radius: 15px; 
+    margin: 0px 15px 0px 15px;
+    &__action{
+      box-shadow: 0px 3px 10px rgba(102, 102, 102, 0.178);
+      width: 100%;    
+      margin-bottom: 30px;   
+      border-radius: 25px;
+      overflow: hidden;     
+      img{
+        height: 200px;
+        object-fit: cover;
+        width: 100%;
+        border-top-left-radius: 25px;
+        border-top-right-radius: 25px;
+        background-color: white;   
+      }  
+    }    
 }
 .legende{
-  display: flex; 
-  flex-direction: column;
-  justify-content: center; 
-  font-size: 1rem;
-  box-shadow: 0px 3px 10px rgba(102, 102, 102, 0.178);
-  padding: 3px 0px 5px 10px;
-  position: relative;
+    display: flex; 
+    flex-direction: column;
+    justify-content: center; 
+    font-size: 1rem;
+    box-shadow: 0px 3px 10px rgba(102, 102, 102, 0.178);
+    padding: 3px 0px 5px 10px;
+    position: relative;
 
 }
 .heart__icon{
@@ -156,6 +209,6 @@ input {
     padding-right: 20px;
 }
 figure{
-  margin:0;
-  background-color: white;
+    margin:0;
+    background-color: white;
 }

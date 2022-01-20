@@ -9,12 +9,65 @@
   text-align: center;
 }
 
+@keyframes loader {
+  0% {
+    background-color: #9356DC;
+    opacity: 1;
+    z-index: 1;
+  }
+  50% {
+    opacity: 1;
+    background-color: white;
+    z-index: 1;
+  }
+  80% {
+    opacity: 1;
+    background-color: white;
+    z-index: 1;
+  }
+  100% {
+    transition: 0.8s;
+    opacity: 0;
+  }
+}
+@keyframes pulsation_bouton /* effet pulser au survole du bouton rechercher*/ {
+  from {
+    box-shadow: 0 0 0 0px rgba(255, 255, 255, 0), 0 0 0 10px #49b1da;
+  }
+  to {
+    box-shadow: 0 0 0 20px rgba(255, 255, 255, 0), 0 0 0 40px rgba(255, 255, 255, 0);
+  }
+}
 body {
   box-sizing: border-box;
   background-color: #F8F6F9;
   font-family: "Roboto", sans-serif;
   margin: 0 auto;
   width: 100%;
+}
+
+.Loading__container {
+  display: flex;
+  align-items: center;
+  position: fixed;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  justify-content: center;
+  background-color: #9356DC;
+  border-radius: 50%;
+  width: 50%;
+  height: 25%;
+  animation-name: loader;
+  animation: pulsation_bouton 4s ease-in;
+  animation-duration: 5s;
+  animation-fill-mode: forwards;
+  animation-iteration-count: 1;
+  object-fit: contain;
+}
+.Loading__container--change {
+  transition: loader 500ms;
+  display: none;
 }
 
 h2 {
@@ -25,9 +78,9 @@ h2 {
 }
 
 .form__localisation {
-  background-color: #ECECEC;
   display: flex;
   align-items: center;
+  background-color: #ECECEC;
   justify-content: center;
   padding-top: 10px;
   padding-bottom: 10px;
@@ -140,7 +193,6 @@ div.container__fonctionnality__card:nth-child(2) {
   margin-bottom: 30px;
   border-radius: 25px;
   overflow: hidden;
-  color: white;
 }
 .card__present__action img {
   height: 200px;
