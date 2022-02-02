@@ -1,0 +1,25 @@
+$bg-primary: #9356DC;
+$bg-secondary: #FF79DA;
+.btn__reservation {
+    color: white;
+    padding: 1.5rem 3rem;
+    text-align: center;    
+    background: linear-gradient(176deg, $bg-secondary 0%, $bg-primary 100%);
+    width: min-content;
+    white-space: nowrap;
+    margin: 4rem auto;
+    border-radius: 30px;
+    box-shadow: rgb(149 157 165 / 40%) 0px 8px 24px;
+    cursor: pointer;
+    transition: 0.2s ease-in-out;
+    a{
+        color: white;  
+        text-decoration: none;      
+    }
+    &:hover, :active {
+        filter: brightness(1.1);
+        box-shadow: rgba(50, 50, 93, 0.60) 0px 30px 60px -12px,
+        rgba(0, 0, 0, 0.3) 0px 18px 36px -18px;;
+
+}
+}

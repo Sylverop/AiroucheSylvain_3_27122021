@@ -1,0 +1,54 @@
+@use "../layout/variable";
+$fontTwo: "Shrikhand", cursive;
+$bg-color-header: #fff;
+
+.logo {
+    background-color: $bg-color-header;
+    box-shadow: inset #c8c8d1 0px -3px 3px 0px;
+    padding: 0.9em;
+    text-align: center;
+    width: auto;  
+}  
+  footer{
+    background-color: rgb(56, 55, 55);
+    padding-top: 10px;
+    padding-bottom: 10px;  
+     ul{
+        color: whitesmoke;
+        padding-left: 0;
+         margin-left: 30px;
+        }    
+    li{
+        list-style-type:none;
+        font-size: 16px;
+        line-height: 28px;
+}
+} 
+.entete{
+    margin: 10px 0px 10px 30px; 
+    &__title{
+    width: 19%;       
+    font-family: $fontTwo;
+    font-size: 18px;
+    color: white;
+    letter-spacing: 0.1px;
+  }
+}
+footer{ 
+    a{
+    text-decoration: none;
+    color:white;
+    &:hover{
+    text-decoration:white underline;
+    }
+    }
+    i{
+    font-size: 14px;
+    margin-right: 10px;
+}
+} 
+i.sizing{
+    font-size: 10px;
+    transform: rotate(125deg);
+    letter-spacing: 0.01px;
+}

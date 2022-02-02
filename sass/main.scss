@@ -1,9 +1,15 @@
+@import "./base/body";
 
-@import "./base/container";
+@import "./components/button";
+
+@import "./layout/header_footer";
+@import "./layout/heart_propriety";
+@import "./layout/variable";
 
 @import "./pages/homepage";
+@import "./pages/loadingpage";
+@import "./pages/menu_pages";
 
 
 
-@import "./utils/logo_image";
-@import "./utils/color";
+

@@ -1,0 +1,107 @@
+$fontOne: "Roboto", sans-serif;
+$fontTwo: "Shrikhand", cursive;
+
+$bg-primary: #9356DC;
+$bg-secondary: #FF79DA;
+$bg-tertiary: #99E2D0;
+$bg-quaternary:  #ECECEC;
+
+$bg-color-body: #F8F6F9;
+
+$color-i-grey: #808080;
+
+.rightorwrong {
+    width: 0%;
+    height: 80px;   
+    align-self: center;
+    margin: 0;       
+    display: flex;    
+    background-color: $bg-tertiary;
+    align-items: center;    
+    justify-content: center;
+    opacity: 1;
+    transition:0.6s ;
+    opacity: 1;
+   }
+i.validation{ 
+        font-weight: bolder;
+        display: flex;   
+        align-items: flex-end;
+        color: $bg-tertiary;
+        background-color: white;
+        border-radius: 50%;
+        padding: 5px;
+        transform: rotate(0);
+        opacity: 1;    
+        position: relative;
+        left:7px; 
+}
+  @keyframes rotation-right{
+    0% {
+      transform: rotate(1turn);
+    }
+    100% {
+      opacity: 1;
+    }
+  } 
+
+  @keyframes roundone {
+    from {
+      transform: rotate(360deg);
+    }
+  
+    to {
+      transform: rotate(0deg);
+    }
+  }
+  
+  @keyframes roundturn {
+    from {
+      transform: rotate(360deg);
+    }
+  
+    to {
+      transform: rotate(0deg);
+    }
+  }
+  @keyframes fadein {
+    from {
+        opacity:0;
+    }
+    to {
+        opacity:1;
+    }
+}
+@keyframes colorheartchange{
+  0% {
+   color: #BB56DC 0.2s;
+   opacity: .1;
+  }
+  30%{
+   color: #BB56DC 0.3s;
+   opacity: 0.3;
+  }
+  50%{
+   color: #BB56DC 0.5s;
+   opacity: .5;
+  }
+  80%{
+   color: #BB56DC 0.8s;
+   opacity: .8;
+  }
+  100%{
+   color: #BB56DC 1s;
+   font-weight: bolder;
+   opacity: 1;
+  }
+}
+@keyframes fadeout {
+  from {
+    opacity: 100%;
+  }
+
+  to {
+    opacity: 0%;
+    visibility: hidden;
+  }
+}

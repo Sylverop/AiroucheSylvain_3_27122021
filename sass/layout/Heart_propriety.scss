@@ -1,0 +1,28 @@
+$color-heart:#BB56DC;
+.heart__icon{
+    align-self: flex-end;
+    position: absolute;
+    padding-right: 20px;
+
+}
+.heart__icon--bis{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: baseline; 
+    padding-top: 0;
+    i{
+        padding-right: 50px;    
+    }
+}
+
+.colorchange{
+    &::before{
+        font-size: 22px;
+    }
+    &:hover, :active{
+    color: $color-heart;
+    animation: colorheartchange 1s ease-in-out forwards;
+    transition: color 0.2s;
+    }
+}

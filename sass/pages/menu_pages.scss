@@ -1,0 +1,115 @@
+$sizing-width: 100%;
+$bg-tertiary: #99E2D0;
+.bg__menu{
+    width: $sizing-width;
+    .font-menu{
+      width: $sizing-width;
+      height: 270px;
+      object-fit: cover;
+    }
+}
+i.return{
+    position: absolute;
+    width: 21px;
+    top: 3%;
+    right: 88%;
+    font-size: 20px;
+    text-decoration: none;
+    color: black;
+}
+
+.card__menu{
+    position: relative;
+    bottom: 50px;
+    border-radius: 30px;
+    background-color: #f5f3f3;
+    margin-bottom: 10px;
+    padding-bottom: 15px;
+    h2{
+        margin-left: 20px;
+        font-size: 1.5rem;
+        
+    }
+    h3{
+        margin-left: 20px;
+        text-transform: uppercase;
+        font-weight: lighter;
+        margin-bottom: 0;
+        margin-top: 30px;
+        font-size: 18px;
+    }
+}
+.underline{
+    width: 45px;
+    border-bottom: $bg-tertiary 3px solid;
+    margin-bottom: 20px;
+    margin-left: 20px;
+    margin-top: 8px;
+}
+.card__menu--modifier{
+    width: 95%;
+    display: flex;   
+    align-items: flex-end;
+    padding: 0px;
+    box-shadow: 1px 1px 8px 1px #ebe8e8;
+    overflow: hidden;
+    background-color: white;
+    border-radius: 15px;   
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 15px;
+    &:hover { 
+        .rightorwrong{
+            border-top-right-radius: 10px;
+            border-bottom-right-radius: 10px;
+            width: 20%;
+            opacity: 1;
+        }       
+    i.validation{
+        cursor: pointer;        
+        animation-name: rotation-right;        
+        animation-duration: 0.4s;        
+        animation-timing-function: linear;      
+        animation-fill-mode: forwards;
+        animation-iteration-count: 1;        
+        transition: 0.6s;      
+        margin-right: 11px;         
+    }
+    }
+}
+
+.modifier{
+    width: 90%;   
+    display: flex;    
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 10px;
+    padding-top: 5px;
+    white-space: nowrap;
+    overflow: hidden;
+    h4{  
+    margin-top: 0;
+    margin-bottom: 15px;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    }
+}
+.infos{
+    font-size: 15px;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    margin-bottom: 5px;
+}
+.price {
+    width: 10%;
+    font-weight: bolder;
+    text-overflow: ellipsis;
+    text-align: end;
+    padding-right: 20px;
+    padding-bottom: 10px;}
+
+.card__menu--modifier{
+    animation: fadein 3s ease-in-out forwards; 
+}
