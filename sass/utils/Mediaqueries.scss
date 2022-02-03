@@ -1,0 +1,104 @@
+/*mediaqueries desktop tablets*/
+@media screen and (min-width: 769px) {
+    .logo img {
+      width: 300px;
+    }
+    #restaurants{
+
+    }
+    .title__homepage2{
+        padding: 20px 0px 20px 20px;
+    }
+
+    .entete {   
+      display: flex;  
+      flex-direction: row;    
+      width: 8rem;       
+      &__title{
+          padding: 0px;
+          font-size: 1.5rem;
+      }
+    }
+    
+   footer {
+      display: flex;
+      align-items: center;
+        justify-content: center;
+      ul{        
+      display: flex;
+      flex-direction: row;    
+     
+        li{
+          padding-left: 2rem;
+          padding-right: 1rem;
+          font-size: 1.2rem;
+          .sizing, .fa-utensils{
+            font-size: 1.1rem;
+          }
+        }
+      }
+    }
+  }
+  
+  @media screen and (min-width: 992px) {
+   
+    header, nav {
+      width: 90%;
+      margin-left: auto;
+      margin-right: auto;
+    }
+  
+    .title__homepage2 {
+      width: 100%;
+      align-items: center;
+    }
+  
+    .container__fonctionnality__card {
+      width: 40%;     
+      justify-content: flex-start;
+    }
+    
+  
+    #restaurants {
+      width: 90%;
+      margin-left: auto;
+      margin-right: auto;    
+      display: flex;
+      flex-direction: row;    
+      justify-content: space-between;     
+      flex-wrap: wrap;
+    } 
+     .card__present{
+        width: 100%;
+        margin-left: auto;
+        margin-right: auto;       
+        display: flex;
+        flex-direction: row;    
+        justify-content: space-around;     
+        flex-wrap: wrap;         
+        &__action{
+          width:48%;         
+           }
+      }
+     
+    .accueil_resto {
+      margin: 0;
+      margin-bottom: 40px;
+      width: 48%;
+      height: auto;
+      -ms-flex-pack: distribute;
+      justify-content: space-around;
+    }
+  
+    .card__menu--modifier {
+      width: 50%;  
+      flex-direction: row;
+    }
+  
+    article {
+      width: 90%;
+      margin-right: auto;
+      margin-left: auto;
+    }
+  }
+  

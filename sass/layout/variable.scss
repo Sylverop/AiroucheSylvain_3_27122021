@@ -105,3 +105,14 @@ i.validation{
     visibility: hidden;
   }
 }
+@keyframes elementdown {
+  from {
+    transform: translatey(30px);
+    opacity: 0%;
+  }
+
+  to {
+    transform: translatey(0px);
+    opacity: 100%;
+  }
+}

@@ -76,17 +76,13 @@ h2.title__homepage {
 .title__homepage2 {
     font-family: 'roboto', 'sans seriff';
     font-size: 24px;
-    margin-left: 25px;
+    padding: 20px 0 20px 5px;    
     font-weight: bolder;
   }
 .container__fonctionnality {
     background-color: white;
     padding-bottom: 50px;
-    :hover {      
-      box-shadow: 3px 3px 10px 6px #c4bebf;
-      transition: 0.4s;    
-      background: lighten($bg-secondary,24%);  
-    }
+    
          
   }
 .container__fonctionnality__card {
@@ -99,7 +95,12 @@ h2.title__homepage {
     background-color: $bg-color-body;
     border-radius: 15px;
     margin-bottom: 30px; 
-    position: relative;   
+    position: relative;
+    &:hover {      
+      box-shadow: 3px 3px 10px 6px #c4bebf;
+      transition: 0.4s;    
+      background: lighten($bg-secondary,24%);  
+    }   
     .number__effectround {
           background: #9356dc;
           color: white;
@@ -127,6 +128,7 @@ i.colorgrey__one{
   /*section restaurant*/
 
 #restaurant{   
+    display: flex;
     justify-content: space-between;
     margin-bottom: 1.1rem;   
 }   

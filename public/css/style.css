@@ -90,6 +90,16 @@ i.validation {
     visibility: hidden;
   }
 }
+@keyframes elementdown {
+  from {
+    transform: translatey(30px);
+    opacity: 0%;
+  }
+  to {
+    transform: translatey(0px);
+    opacity: 100%;
+  }
+}
 body {
   box-sizing: border-box;
   background-color: #F8F6F9;
@@ -210,6 +220,16 @@ i.validation {
   to {
     opacity: 0%;
     visibility: hidden;
+  }
+}
+@keyframes elementdown {
+  from {
+    transform: translatey(30px);
+    opacity: 0%;
+  }
+  to {
+    transform: translatey(0px);
+    opacity: 100%;
   }
 }
 .logo {
@@ -383,6 +403,16 @@ i.validation {
     visibility: hidden;
   }
 }
+@keyframes elementdown {
+  from {
+    transform: translatey(30px);
+    opacity: 0%;
+  }
+  to {
+    transform: translatey(0px);
+    opacity: 100%;
+  }
+}
 body {
   box-sizing: border-box;
   background-color: #F8F6F9;
@@ -458,18 +488,13 @@ h2.title__homepage {
 .title__homepage2 {
   font-family: "roboto", "sans seriff";
   font-size: 24px;
-  margin-left: 25px;
+  padding: 20px 0 20px 5px;
   font-weight: bolder;
 }
 
 .container__fonctionnality {
   background-color: white;
   padding-bottom: 50px;
-}
-.container__fonctionnality :hover {
-  box-shadow: 3px 3px 10px 6px #c4bebf;
-  transition: 0.4s;
-  background: #fff3fc;
 }
 
 .container__fonctionnality__card {
@@ -484,6 +509,11 @@ h2.title__homepage {
   border-radius: 15px;
   margin-bottom: 30px;
   position: relative;
+}
+.container__fonctionnality__card:hover {
+  box-shadow: 3px 3px 10px 6px #c4bebf;
+  transition: 0.4s;
+  background: #fff3fc;
 }
 .container__fonctionnality__card .number__effectround {
   background: #9356dc;
@@ -513,6 +543,7 @@ i.colorgrey__one {
 
 /*section restaurant*/
 #restaurant {
+  display: flex;
   justify-content: space-between;
   margin-bottom: 1.1rem;
 }
@@ -669,6 +700,16 @@ i.validation {
     visibility: hidden;
   }
 }
+@keyframes elementdown {
+  from {
+    transform: translatey(30px);
+    opacity: 0%;
+  }
+  to {
+    transform: translatey(0px);
+    opacity: 100%;
+  }
+}
 .Loading {
   background: white;
   position: fixed;
@@ -755,10 +796,8 @@ i.return {
 
 .card__menu {
   position: relative;
-  bottom: 50px;
   border-radius: 30px;
   background-color: #f5f3f3;
-  margin-bottom: 10px;
   padding-bottom: 15px;
 }
 .card__menu h2 {
@@ -787,7 +826,7 @@ i.return {
   display: flex;
   align-items: flex-end;
   padding: 0px;
-  box-shadow: 1px 1px 8px 1px #ebe8e8;
+  box-shadow: 2px 2px 10px 1px #ebe8e8;
   overflow: hidden;
   background-color: white;
   border-radius: 15px;
@@ -848,7 +887,167 @@ i.return {
 }
 
 .card__menu--modifier {
-  animation: fadein 3s ease-in-out forwards;
+  animation: elementdown 1s forwards;
+  opacity: 0;
+}
+.card__menu--modifier:nth-child(1) {
+  animation-delay: calc(1s/10);
+}
+.card__menu--modifier:nth-child(2) {
+  animation-delay: calc(2s/10);
+}
+.card__menu--modifier:nth-child(3) {
+  animation-delay: calc(3s/10);
+}
+.card__menu--modifier:nth-child(4) {
+  animation-delay: calc(4s/10);
+}
+.card__menu--modifier:nth-child(5) {
+  animation-delay: calc(5s/10);
+}
+.card__menu--modifier:nth-child(6) {
+  animation-delay: calc(6s/10);
+}
+.card__menu--modifier:nth-child(7) {
+  animation-delay: calc(7s/10);
+}
+.card__menu--modifier:nth-child(8) {
+  animation-delay: calc(8s/10);
+}
+.card__menu--modifier:nth-child(9) {
+  animation-delay: calc(9s/10);
+}
+.card__menu--modifier:nth-child(10) {
+  animation-delay: calc(10s/10);
+}
+.card__menu--modifier:nth-child(11) {
+  animation-delay: calc(11s/10);
+}
+.card__menu--modifier:nth-child(12) {
+  animation-delay: calc(12s/10);
+}
+.card__menu--modifier:nth-child(13) {
+  animation-delay: calc(13s/10);
+}
+.card__menu--modifier:nth-child(14) {
+  animation-delay: calc(14s/10);
+}
+.card__menu--modifier:nth-child(15) {
+  animation-delay: calc(15s/10);
+}
+.card__menu--modifier:nth-child(16) {
+  animation-delay: calc(16s/10);
+}
+.card__menu--modifier:nth-child(17) {
+  animation-delay: calc(17s/10);
+}
+.card__menu--modifier:nth-child(18) {
+  animation-delay: calc(18s/10);
+}
+.card__menu--modifier:nth-child(19) {
+  animation-delay: calc(19s/10);
+}
+.card__menu--modifier:nth-child(20) {
+  animation-delay: calc(20s/10);
+}
+
+/*mediaqueries desktop tablets*/
+@media screen and (min-width: 769px) {
+  .logo img {
+    width: 300px;
+  }
+
+  .title__homepage2 {
+    padding: 20px 0px 20px 20px;
+  }
+
+  .entete {
+    display: flex;
+    flex-direction: row;
+    width: 8rem;
+  }
+  .entete__title {
+    padding: 0px;
+    font-size: 1.5rem;
+  }
+
+  footer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  footer ul {
+    display: flex;
+    flex-direction: row;
+  }
+  footer ul li {
+    padding-left: 2rem;
+    padding-right: 1rem;
+    font-size: 1.2rem;
+  }
+  footer ul li .sizing, footer ul li .fa-utensils {
+    font-size: 1.1rem;
+  }
+}
+@media screen and (min-width: 992px) {
+  header, nav {
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .title__homepage2 {
+    width: 100%;
+    align-items: center;
+  }
+
+  .container__fonctionnality__card {
+    width: 40%;
+    justify-content: flex-start;
+  }
+
+  #restaurants {
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    flex-wrap: wrap;
+  }
+
+  .card__present {
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    flex-wrap: wrap;
+  }
+  .card__present__action {
+    width: 48%;
+  }
+
+  .accueil_resto {
+    margin: 0;
+    margin-bottom: 40px;
+    width: 48%;
+    height: auto;
+    -ms-flex-pack: distribute;
+    justify-content: space-around;
+  }
+
+  .card__menu--modifier {
+    width: 50%;
+    flex-direction: row;
+  }
+
+  article {
+    width: 90%;
+    margin-right: auto;
+    margin-left: auto;
+  }
 }
 
 /*# sourceMappingURL=style.css.map */
