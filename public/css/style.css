@@ -60,24 +60,18 @@ i.validation {
 }
 @keyframes colorheartchange {
   0% {
-    color: #BB56DC 0.2s;
     opacity: 0.1;
   }
   30% {
-    color: #BB56DC 0.3s;
     opacity: 0.3;
   }
   50% {
-    color: #BB56DC 0.5s;
     opacity: 0.5;
   }
   80% {
-    color: #BB56DC 0.8s;
     opacity: 0.8;
   }
   100% {
-    color: #BB56DC 1s;
-    font-weight: bolder;
     opacity: 1;
   }
 }
@@ -192,24 +186,18 @@ i.validation {
 }
 @keyframes colorheartchange {
   0% {
-    color: #BB56DC 0.2s;
     opacity: 0.1;
   }
   30% {
-    color: #BB56DC 0.3s;
     opacity: 0.3;
   }
   50% {
-    color: #BB56DC 0.5s;
     opacity: 0.5;
   }
   80% {
-    color: #BB56DC 0.8s;
     opacity: 0.8;
   }
   100% {
-    color: #BB56DC 1s;
-    font-weight: bolder;
     opacity: 1;
   }
 }
@@ -306,9 +294,12 @@ i.sizing {
   font-size: 22px;
 }
 .colorchange:hover, .colorchange :active {
-  color: #BB56DC;
+  background: linear-gradient(#9356DC, #FF79DA);
+  color: #fff;
+  font-weight: 600;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
   animation: colorheartchange 1s ease-in-out forwards;
-  transition: color 0.2s;
 }
 
 .rightorwrong {
@@ -373,24 +364,18 @@ i.validation {
 }
 @keyframes colorheartchange {
   0% {
-    color: #BB56DC 0.2s;
     opacity: 0.1;
   }
   30% {
-    color: #BB56DC 0.3s;
     opacity: 0.3;
   }
   50% {
-    color: #BB56DC 0.5s;
     opacity: 0.5;
   }
   80% {
-    color: #BB56DC 0.8s;
     opacity: 0.8;
   }
   100% {
-    color: #BB56DC 1s;
-    font-weight: bolder;
     opacity: 1;
   }
 }
@@ -670,24 +655,18 @@ i.validation {
 }
 @keyframes colorheartchange {
   0% {
-    color: #BB56DC 0.2s;
     opacity: 0.1;
   }
   30% {
-    color: #BB56DC 0.3s;
     opacity: 0.3;
   }
   50% {
-    color: #BB56DC 0.5s;
     opacity: 0.5;
   }
   80% {
-    color: #BB56DC 0.8s;
     opacity: 0.8;
   }
   100% {
-    color: #BB56DC 1s;
-    font-weight: bolder;
     opacity: 1;
   }
 }

@@ -1,7 +1,7 @@
 @use "../layout/variable";
 $fontTwo: "Shrikhand", cursive;
 $bg-color-header: #fff;
-
+$color-white: white;
 .logo {
     background-color: $bg-color-header;
     box-shadow: inset #c8c8d1 0px -3px 3px 0px;
@@ -30,16 +30,16 @@ $bg-color-header: #fff;
     width: 19%;       
     font-family: $fontTwo;
     font-size: 18px;
-    color: white;
+    color: $color-white;
     letter-spacing: 0.1px;
   }
 }
 footer{ 
     a{
     text-decoration: none;
-    color:white;
+    color:$color-white ;
     &:hover{
-    text-decoration:white underline;
+    text-decoration:$color-white underline;
     }
     }
     i{
