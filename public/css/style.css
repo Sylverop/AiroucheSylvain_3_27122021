@@ -23,7 +23,7 @@ i.validation {
   transform: rotate(0);
   opacity: 1;
   position: relative;
-  left: 7px;
+  left: 9px;
 }
 
 @keyframes rotation-right {
@@ -109,19 +109,36 @@ body {
   background: linear-gradient(176deg, #FF79DA 0%, #9356DC 100%);
   width: min-content;
   white-space: nowrap;
-  margin: 4rem auto;
+  margin: 3em auto;
   border-radius: 30px;
   box-shadow: rgba(149, 157, 165, 0.4) 0px 8px 24px;
   cursor: pointer;
   transition: 0.2s ease-in-out;
 }
+.btn__reservation--modif {
+  margin-top: 0;
+}
 .btn__reservation a {
   color: white;
   text-decoration: none;
 }
-.btn__reservation:hover, .btn__reservation :active {
+.btn__reservation:hover, .btn__reservation:active {
   filter: brightness(1.1);
   box-shadow: rgba(50, 50, 93, 0.6) 0px 30px 60px -12px, rgba(0, 0, 0, 0.3) 0px 18px 36px -18px;
+}
+
+.btn__reservation--modif {
+  color: white;
+  padding: 1.5rem 3rem;
+  text-align: center;
+  background: linear-gradient(176deg, #FF79DA 0%, #9356DC 100%);
+  width: min-content;
+  white-space: nowrap;
+  margin: 0 auto 4.2em;
+  border-radius: 30px;
+  box-shadow: rgba(149, 157, 165, 0.4) 0px 8px 24px;
+  cursor: pointer;
+  transition: 0.2s ease-in-out;
 }
 
 .rightorwrong {
@@ -149,7 +166,7 @@ i.validation {
   transform: rotate(0);
   opacity: 1;
   position: relative;
-  left: 7px;
+  left: 9px;
 }
 
 @keyframes rotation-right {
@@ -287,19 +304,24 @@ i.sizing {
   padding-top: 0;
 }
 .heart__icon--bis i {
-  padding-right: 50px;
+  padding-right: 30px;
 }
 
 .colorchange::before {
   font-size: 22px;
 }
-.colorchange:hover, .colorchange :active {
+.colorchange:hover, .colorchange:active, .colorchange:focus {
   background: linear-gradient(#9356DC, #FF79DA);
   color: #fff;
   font-weight: 600;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   animation: colorheartchange 1s ease-in-out forwards;
+  -moz-background: linear-gradient(#9356DC, #FF79DA);
+  -moz-color: #fff;
+  -moz-font-weight: 600;
+  -moz-webkit-background-clip: text;
+  -moz-webkit-text-fill-color: transparent;
 }
 
 .rightorwrong {
@@ -327,7 +349,7 @@ i.validation {
   transform: rotate(0);
   opacity: 1;
   position: relative;
-  left: 7px;
+  left: 9px;
 }
 
 @keyframes rotation-right {
@@ -427,7 +449,7 @@ a {
 }
 
 input {
-  width: 135px;
+  width: 146px;
   padding-right: 20px;
   border: none;
   background-color: #ECECEC;
@@ -463,7 +485,8 @@ h1.title__homepage {
 }
 
 h2.title__homepage {
-  font-size: 23px;
+  font-size: 20px;
+  -moz-font-size: 23px;
   margin-top: 0;
   padding-top: 20px;
   padding-bottom: 0;
@@ -473,7 +496,7 @@ h2.title__homepage {
 .title__homepage2 {
   font-family: "roboto", "sans seriff";
   font-size: 24px;
-  padding: 20px 0 20px 5px;
+  padding: 20px 0 20px 15px;
   font-weight: bolder;
 }
 
@@ -495,7 +518,7 @@ h2.title__homepage {
   margin-bottom: 30px;
   position: relative;
 }
-.container__fonctionnality__card:hover {
+.container__fonctionnality__card:hover, .container__fonctionnality__card:active {
   box-shadow: 3px 3px 10px 6px #c4bebf;
   transition: 0.4s;
   background: #fff3fc;
@@ -545,7 +568,7 @@ i.colorgrey__one {
   overflow: hidden;
   position: relative;
 }
-.card__present__action:hover {
+.card__present__action:hover, .card__present__action:active {
   box-shadow: 3px 3px 10px 3px #a19f9f;
   transition: 0.2s;
 }
@@ -618,7 +641,7 @@ i.validation {
   transform: rotate(0);
   opacity: 1;
   position: relative;
-  left: 7px;
+  left: 9px;
 }
 
 @keyframes rotation-right {
@@ -778,6 +801,7 @@ i.return {
   border-radius: 30px;
   background-color: #f5f3f3;
   padding-bottom: 15px;
+  bottom: 4em;
 }
 .card__menu h2 {
   margin-left: 20px;
@@ -813,13 +837,13 @@ i.return {
   margin-right: auto;
   margin-bottom: 15px;
 }
-.card__menu--modifier:hover .rightorwrong {
+.card__menu--modifier:hover .rightorwrong, .card__menu--modifier:active .rightorwrong {
   border-top-right-radius: 10px;
   border-bottom-right-radius: 10px;
   width: 20%;
   opacity: 1;
 }
-.card__menu--modifier:hover i.validation {
+.card__menu--modifier:hover i.validation, .card__menu--modifier:active i.validation {
   cursor: pointer;
   animation-name: rotation-right;
   animation-duration: 0.4s;

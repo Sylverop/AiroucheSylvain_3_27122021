@@ -12,7 +12,7 @@ $color-heart:#BB56DC;
     align-items: baseline; 
     padding-top: 0;
     i{
-        padding-right: 50px;    
+        padding-right: 30px;    
     }
 }
 
@@ -20,13 +20,20 @@ $color-heart:#BB56DC;
     &::before{
         font-size: 22px;
     }
-    &:hover, :active{
+    &:hover, &:active, &:focus{
         background: linear-gradient(#9356DC, #FF79DA);
         color: #fff;
         font-weight: 600;        
         -webkit-background-clip: text;
         -webkit-text-fill-color: transparent;        
        animation: colorheartchange 1s ease-in-out forwards;
+       -moz-background: linear-gradient(#9356DC, #FF79DA);
+        -moz-color: #fff;
+       -moz-font-weight: 600;        
+       -moz-webkit-background-clip: text;
+        -moz-webkit-text-fill-color: transparent;        
+     
+
 
     }
 }

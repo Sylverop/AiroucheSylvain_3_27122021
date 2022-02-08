@@ -24,6 +24,7 @@ i.return{
     border-radius: 30px;
     background-color: #f5f3f3; 
     padding-bottom: 15px;
+    bottom: 4em;
     h2{
         margin-left: 20px;
         font-size: 1.5rem;        
@@ -56,7 +57,7 @@ i.return{
     margin-left: auto;
     margin-right: auto;
     margin-bottom: 15px;
-    &:hover { 
+    &:hover, &:active { 
         .rightorwrong{
             border-top-right-radius: 10px;
             border-bottom-right-radius: 10px;
