@@ -11,10 +11,7 @@ $bg-secondary: #FF79DA;
     border-radius: 30px;
     box-shadow: rgb(149 157 165 / 40%) 0px 8px 24px;
     cursor: pointer;
-    transition: 0.2s ease-in-out;  
-        &--modif{
-            margin-top:0;  
-        }       
+    transition: 0.2s ease-in-out;       
         a{
         color: white;  
         text-decoration: none;      
@@ -39,6 +36,15 @@ $bg-secondary: #FF79DA;
         box-shadow: rgb(149 157 165 / 40%) 0px 8px 24px;
         cursor: pointer;
         transition: 0.2s ease-in-out;  
-    }
+        a{
+            color: white;  
+            text-decoration: none;      
+            }
+            &:hover, &:active {
+            filter: brightness(1.1);
+            box-shadow: rgba(50, 50, 93, 0.60) 0px 30px 60px -12px,
+            rgba(0, 0, 0, 0.3) 0px 18px 36px -18px;;
+           }
+        }
         
                
