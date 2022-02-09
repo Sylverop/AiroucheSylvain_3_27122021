@@ -727,7 +727,7 @@ i.validation {
   display: flex;
   justify-content: center;
   align-items: center;
-  animation: fadeout ease-in-out 4s forwards;
+  animation: fadeout ease-in-out 3s forwards;
 }
 
 .Loader__roundhigh {
