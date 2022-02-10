@@ -24,6 +24,7 @@ $color-heart:#BB56DC;
         background: linear-gradient(#9356DC, #FF79DA);
         color: #fff;
         font-weight: 600;        
+         cursor: pointer;
         -webkit-background-clip: text;
         -webkit-text-fill-color: transparent;        
        animation: colorheartchange 1s ease-in-out forwards;

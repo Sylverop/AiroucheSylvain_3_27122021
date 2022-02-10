@@ -319,6 +319,7 @@ i.sizing {
   background: linear-gradient(#9356DC, #FF79DA);
   color: #fff;
   font-weight: 600;
+  cursor: pointer;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   animation: colorheartchange 1s ease-in-out forwards;
@@ -794,7 +795,7 @@ i.validation {
 i.return {
   position: absolute;
   width: 21px;
-  top: 3%;
+  top: 2.5%;
   right: 88%;
   font-size: 20px;
   text-decoration: none;
@@ -969,6 +970,11 @@ i.return {
     padding: 20px 0px 20px 20px;
   }
 
+  i.return {
+    top: 2.75%;
+    right: 92%;
+  }
+
   .entete {
     display: flex;
     justify-content: center;
@@ -997,6 +1003,11 @@ i.return {
 @media screen and (min-width: 992px) {
   .logo img {
     width: 300px;
+  }
+
+  i.return {
+    top: 2.75%;
+    right: 92%;
   }
 
   header, nav {

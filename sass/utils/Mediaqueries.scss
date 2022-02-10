@@ -6,6 +6,10 @@
     .title__homepage2{
         padding: 20px 0px 20px 20px;
     }
+    i.return{
+      top: 2.75%;
+      right: 92%;
+    }
     .entete {   
       display: flex;  
       justify-content: center;    
@@ -34,6 +38,10 @@
 @media screen and (min-width: 992px) {
   .logo img {
     width: 300px;
+  }
+  i.return{
+    top: 2.75%;
+    right: 92%;
   }
     header, nav {
       width: 90%;
