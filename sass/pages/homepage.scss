@@ -97,10 +97,13 @@ h2.title__homepage {
     border-radius: 15px;
     margin-bottom: 30px; 
     position: relative;
-    &:hover, &:active{      
+    &:hover, &:active {      
       box-shadow: 3px 3px 10px 6px #c4bebf;
       transition: 0.4s;    
       background: lighten($bg-secondary,24%);  
+      i{
+        color: $bg-primary;
+      }
     }   
     .number__effectround {
           background: #9356dc;

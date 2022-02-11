@@ -3,7 +3,7 @@ $colorPurple: #9356dc;
 $colorPink: #ff79da;
 $colorGreen: #99e2d0;
 $colorGrey: #f6f6f6;
-@use "../layout/variable";
+@use "../utils/variable";
 .Loading {
     background: white;
     position: fixed;

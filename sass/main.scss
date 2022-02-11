@@ -1,16 +1,16 @@
 @import "./base/body";
 
 @import "./components/button";
+@import "./components/heart_propriety";
 
 @import "./layout/header_footer";
-@import "./layout/heart_propriety";
-@import "./layout/variable";
 
 @import "./pages/homepage";
 @import "./pages/loadingpage";
 @import "./pages/menu_pages";
 
-@import "./utils/Mediaqueries";
 
+@import "./utils/Mediaqueries";
+@import "./utils/variable";
 
 

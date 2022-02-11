@@ -44,10 +44,10 @@ i.validation {
 }
 @keyframes roundturn {
   from {
-    transform: rotate(360deg);
+    transform: rotate(0deg);
   }
   to {
-    transform: rotate(0deg);
+    transform: rotate(360deg);
   }
 }
 @keyframes fadein {
@@ -146,6 +146,41 @@ body {
   box-shadow: rgba(50, 50, 93, 0.6) 0px 30px 60px -12px, rgba(0, 0, 0, 0.3) 0px 18px 36px -18px;
 }
 
+.heart__icon {
+  align-self: flex-end;
+  position: absolute;
+  padding-right: 20px;
+}
+
+.heart__icon--bis {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: baseline;
+  padding-top: 0;
+}
+.heart__icon--bis i {
+  padding-right: 30px;
+}
+
+.colorchange::before {
+  font-size: 22px;
+}
+.colorchange:hover, .colorchange:active, .colorchange:focus {
+  background: linear-gradient(#9356DC, #FF79DA);
+  color: #fff;
+  font-weight: 600;
+  cursor: pointer;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  animation: colorheartchange 1s ease-in-out forwards;
+  -moz-background: linear-gradient(#9356DC, #FF79DA);
+  -moz-color: #fff;
+  -moz-font-weight: 600;
+  -moz-webkit-background-clip: text;
+  -moz-webkit-text-fill-color: transparent;
+}
+
 .rightorwrong {
   width: 0%;
   height: 80px;
@@ -192,10 +227,10 @@ i.validation {
 }
 @keyframes roundturn {
   from {
-    transform: rotate(360deg);
+    transform: rotate(0deg);
   }
   to {
-    transform: rotate(0deg);
+    transform: rotate(360deg);
   }
 }
 @keyframes fadein {
@@ -295,137 +330,6 @@ i.sizing {
   letter-spacing: 0.01px;
 }
 
-.heart__icon {
-  align-self: flex-end;
-  position: absolute;
-  padding-right: 20px;
-}
-
-.heart__icon--bis {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  align-items: baseline;
-  padding-top: 0;
-}
-.heart__icon--bis i {
-  padding-right: 30px;
-}
-
-.colorchange::before {
-  font-size: 22px;
-}
-.colorchange:hover, .colorchange:active, .colorchange:focus {
-  background: linear-gradient(#9356DC, #FF79DA);
-  color: #fff;
-  font-weight: 600;
-  cursor: pointer;
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  animation: colorheartchange 1s ease-in-out forwards;
-  -moz-background: linear-gradient(#9356DC, #FF79DA);
-  -moz-color: #fff;
-  -moz-font-weight: 600;
-  -moz-webkit-background-clip: text;
-  -moz-webkit-text-fill-color: transparent;
-}
-
-.rightorwrong {
-  width: 0%;
-  height: 80px;
-  align-self: center;
-  margin: 0;
-  display: flex;
-  background-color: #99E2D0;
-  align-items: center;
-  justify-content: center;
-  opacity: 1;
-  transition: 0.6s;
-  opacity: 1;
-}
-
-i.validation {
-  font-weight: bolder;
-  display: flex;
-  align-items: flex-end;
-  color: #99E2D0;
-  background-color: white;
-  border-radius: 50%;
-  padding: 5px;
-  transform: rotate(0);
-  opacity: 1;
-  position: relative;
-  left: 9px;
-}
-
-@keyframes rotation-right {
-  0% {
-    transform: rotate(1turn);
-  }
-  100% {
-    opacity: 1;
-  }
-}
-@keyframes roundone {
-  from {
-    transform: rotate(360deg);
-  }
-  to {
-    transform: rotate(0deg);
-  }
-}
-@keyframes roundturn {
-  from {
-    transform: rotate(360deg);
-  }
-  to {
-    transform: rotate(0deg);
-  }
-}
-@keyframes fadein {
-  from {
-    opacity: 0;
-  }
-  to {
-    opacity: 1;
-  }
-}
-@keyframes colorheartchange {
-  0% {
-    opacity: 0.1;
-  }
-  30% {
-    opacity: 0.3;
-  }
-  50% {
-    opacity: 0.5;
-  }
-  80% {
-    opacity: 0.8;
-  }
-  100% {
-    opacity: 1;
-  }
-}
-@keyframes fadeout {
-  from {
-    opacity: 100%;
-  }
-  to {
-    opacity: 0%;
-    visibility: hidden;
-  }
-}
-@keyframes elementdown {
-  from {
-    transform: translatey(30px);
-    opacity: 0%;
-  }
-  to {
-    transform: translatey(0px);
-    opacity: 100%;
-  }
-}
 body {
   box-sizing: border-box;
   background-color: #F8F6F9;
@@ -528,6 +432,9 @@ h2.title__homepage {
   box-shadow: 3px 3px 10px 6px #c4bebf;
   transition: 0.4s;
   background: #fff3fc;
+}
+.container__fonctionnality__card:hover i, .container__fonctionnality__card:active i {
+  color: #9356DC;
 }
 .container__fonctionnality__card .number__effectround {
   background: #9356dc;
@@ -668,10 +575,10 @@ i.validation {
 }
 @keyframes roundturn {
   from {
-    transform: rotate(360deg);
+    transform: rotate(0deg);
   }
   to {
-    transform: rotate(0deg);
+    transform: rotate(360deg);
   }
 }
 @keyframes fadein {
@@ -1096,6 +1003,102 @@ i.return {
   }
   footer ul li .sizing, footer ul li .fa-utensils {
     font-size: 1.1rem;
+  }
+}
+.rightorwrong {
+  width: 0%;
+  height: 80px;
+  align-self: center;
+  margin: 0;
+  display: flex;
+  background-color: #99E2D0;
+  align-items: center;
+  justify-content: center;
+  opacity: 1;
+  transition: 0.6s;
+  opacity: 1;
+}
+
+i.validation {
+  font-weight: bolder;
+  display: flex;
+  align-items: flex-end;
+  color: #99E2D0;
+  background-color: white;
+  border-radius: 50%;
+  padding: 5px;
+  transform: rotate(0);
+  opacity: 1;
+  position: relative;
+  left: 9px;
+}
+
+@keyframes rotation-right {
+  0% {
+    transform: rotate(1turn);
+  }
+  100% {
+    opacity: 1;
+  }
+}
+@keyframes roundone {
+  from {
+    transform: rotate(360deg);
+  }
+  to {
+    transform: rotate(0deg);
+  }
+}
+@keyframes roundturn {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+@keyframes fadein {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+@keyframes colorheartchange {
+  0% {
+    opacity: 0.1;
+  }
+  30% {
+    opacity: 0.3;
+  }
+  50% {
+    opacity: 0.5;
+  }
+  80% {
+    opacity: 0.8;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+@keyframes fadeout {
+  from {
+    opacity: 100%;
+  }
+  to {
+    opacity: 0%;
+    visibility: hidden;
+  }
+}
+@keyframes elementdown {
+  from {
+    transform: translatey(30px);
+    opacity: 0%;
+  }
+  to {
+    transform: translatey(0px);
+    opacity: 100%;
   }
 }
 
